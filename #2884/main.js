@@ -24,11 +24,11 @@ rl.on('line', function (line) {
     let h = Number(input[0])
     let m = Number(input[1])
 
-    m -= 45;
+    m -= 45; // -45분을 해준다
 
-    if(m < 0){
-        m +=60;
-        h -=1;
+    if(m < 0){ 
+        m += 60;
+        h -= 1;
     }
     if(h < 0){
         h = 23;
